@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  overflow-x: hidden;
+}
+body {
+  height: 50000px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+a:link{
+  color: #777;
+  text-decoration: none;
+  text-decoration-line: none;
+}
+
+/*classe de rolagem dando um margin top*/
+.anchor {
+  display: block;
+  height: 92px;
+  margin-top: -80px;
+  visibility: hidden;
+}
+
+.tittle-page {
+  animation: backInDown; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 1s; /* don't forget to set a duration! */
+}
+
+.p1 {
+  display: block;
+  animation: fadeInDown forwards;
+  animation-delay: 0.5s;
+  animation-duration: 1.5s;
+  opacity: 1;
+}
+
+.p2 {
+  display: block;
+  animation: bounceInLeft forwards;
+  animation-duration: 2s;
+  opacity: 1 !important;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.center {
+  width: 100%;
+  padding: 10px 0;
+  display: flex;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  background-color: white;
+  color: gray;
+}
+
+.inner-center {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.imgLogo {
+  width: 150px;
+}
+
+.logoFilterNone {
+  filter: none;
+}
+
+a:link{
+  text-decoration: none;
+  color: #777;
+}
+
+.color-nav2 {
+  color: #777;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 0 0 30px;
+  font-weight: 500;
+  color: #777;
+  
+}
+nav ul i{
+  font-size: 25px;
+  position: absolute;
+  right: 10%;
+  cursor: pointer;
+  color: #777;
+}
+#menu {
+  display: none;
+}
+.nav-color {
+  box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.25);
+}
+
+#banner {
+  width: 100%;
+  background: url(../images/truck.jpg)no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+#banner article {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 200px 0;
+}
+#banner article h2{
+  font-size: 30px;
+  color: white;
+}
+.empresa {
+  color: #a5dc1a;
+}
+#banner article p {
+  width: 50%;
+  margin-top: 20px;
+  font-size: 25px;
+  flex-wrap: wrap;
+  color: white;
+}
+#banner article #color {
+  color: red;
+}
+#sobre {
+  max-width: 1200px;
+  margin: 100px auto;
+}
+#sobre article{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#sobre .descricaoSobre {
+  width: 60%;
+  font-size: 15px;
+}
+#sobre .descricaoSobre p {
+  display: inline;
+  font-size: 20px;
+  height: 100%
+}
+#sobre article .logoSobre {
+  width: 40%;
+  text-align: left;
+}
+#sobre article .logoSobre img {
+  width: 60%
+}
+
+#servico {
+  max-width: 1200px;
+  margin: 150px auto;
+}
+#servico h2 {
+  overflow: hidden;
+  text-align: center;
+  font-size: 20px;
+}
+#servico h2:before,
+#servico h2:after {
+  background-color: #000;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+}
+#servico h2:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+#servico h2:after {
+  left: 0.5em;
+  margin-right: -50%;
+}
+#servico article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  height: 400px;
+}
+#servico .cardServ {
+  width: 30%;
+  border-radius: 10px;
+  margin-left: 20px;
+  border: 1px solid gray;
+  box-shadow: 1px 5px 5px 5px #D3D3D3;
+  padding: 20px;
+  outline: dotted gray;
+  translate: 1;
+}
+#servico .cardServ img {
+  width: 100px;
+}
+#servico .cardServ h3 {
+  font-size: 15px;
+  margin: 5px 0 10px 0;
+}
+#servico .cardServ p {
+  font-size: 15px;
+}
+#servico .cardServ:hover {
+  box-shadow: 5px 10px 10px 10px #D3D3D3;
+  translate: 2;
+}
+
+#info {
+  max-width: 1200px;
+  margin: 100px auto;
+}
+#info h2 {
+  overflow: hidden;
+  text-align: center;
+  font-size: 20px;
+}
+#info h2:before,
+#info h2:after {
+  background-color: #000;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+}
+#info h2:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+#info h2:after {
+  left: 0.5em;
+  margin-right: -50%;
+}
+#info article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#info article .infoCar {
+  text-align: left;
+}
+#info article img {
+  width: 50%;
+  width: 500px;
+}
+#info article .infoDesc {
+  width: 50%;
+}
+#info article .infoDesc h1 {
+  font-size: 30px;
+}
+#info article .infoDesc .btn i{
+  padding-right: 10px;
+  font-size: 20px;
+}
+#info article .infoDesc .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+
+#cliente {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+#cliente article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#cliente article .cardImg {
+  width: 50%;
+}
+#cliente article .cardImg img{
+  width: 400px;
+  text-align: center;
+}
